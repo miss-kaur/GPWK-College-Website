@@ -33,10 +33,3 @@ Built with clean UI, mobile responsiveness, and easy navigation in mind.
 - Contact Information
 
 ---
-
-
-*(Add screenshots here if available)*  
-You can place them in a `screenshots/` folder and reference like:
-
-```markdown
-![Home Page](screenshots/homepage.png)
