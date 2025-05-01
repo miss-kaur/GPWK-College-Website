@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Academic Calendar| Government Polytechnic for Women, Kandaghat</title>
+    <!-- Bootstrap -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="fonts/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/social.css" rel="stylesheet">
+	<link rel="stylesheet" href="news_scroll.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald|Asap">
+	<link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"> </script> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+ <style>
+*{
+	font: 400 13px Lato, sans-serif;
+	cursor:pointer;
+	
+ }
+* a{
+	text-decoration:none;
+	}
+* a:hover{
+	text-decoration:none;
+	}
+body{ 
+	margin:0;
+	align:center;
+	padding-top: 10px;
+	overflow-y: scroll;
+	overflow-x:hidden;
+	}
+#topline button{
+	float: left;
+    padding: 5px;
+	background: tomato;
+    color: white;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+}
+#topline button:hover{
+background: #669900;
+}
+#topline input[type=text] {
+	padding: 5px;
+    font-size: 10px;
+   	float: left;
+    width:80%;
+    background: white;
+}
+#topline::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.new-pad{
+	margin-bottom: 0px;
+	background-color: rgba(71, 76, 76, 0.64);
+}
+.navbar{
+	width:100%;
+	margin-top:0;
+	z-index:4;
+}
+.navbar-inverse {
+    background-color: #ffffff;
+	margin-top:5px;
+	border:none;
+}
+.sub-menu{
+float:right;
+}
+.navbar-nav>li>a {
+	width:100%;
+	color:#800040;
+	font-size:13px;
+	font-weight:bold;
+	line-height: 15px;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 12px 7px;
+	text-transform:capitalize;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #661400;
+	font-size: 13px;
+    font-weight:bold;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+    color:#800040;
+    background-color:#fff;
+	border-radius: 5px;
+}
+
+.navbar-inverse .navbar-nav>li>a::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    background: #000;
+	color:#ff0066;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    -webkit-transition: all 0.60s;
+    -moz-transition: all 0.60s;
+    -o-transition: all 0.60s;
+    transition: all 0.60s;
+}
+.navbar-inverse .navbar-nav>li>a:hover::after {
+    width: 100%;
+    -webkit-transition: all 0.60s;
+    -moz-transition: all 0.60s;
+    -o-transition: all 0.60s;
+    transition: all 0.60s;
+}
+.navbar-inverse .navbar-nav>.active>a{
+	background-color: rgba(255, 255, 255, 0);
+}
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: rgba(127, 193, 175, 0.22);
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color: #000;
+    background-color: rgba(127, 193, 175, 0.22);
+}
+.dropdown-menu {
+	background-color: rgba(255, 200, 210, 0.3);
+	color:#fff;
+}
+.sub-panel li a{
+	text-transform:capitalize;
+	text-shadow: 0 1px 1px rgba(0,0,0,.2);
+	font-size: 13px;
+    font-weight:bold;
+	background-color: rgba(0, 0, 153, 0.6);
+	color:rgb(255, 255, 0);
+	
+}
+.test:hover .dropdown-menu{
+	display:block;
+	background-color:rgba(255, 51, 0, 0.6);
+	color:black;
+}
+
+.card {
+  height: 100%;
+  margin-top:20px;
+   }
+#myCarousel{
+	margin-top:5px;
+	border-radius:30px;
+   width:100%;
+   overflow:hidden;
+   z-index:1;
+   margin-left:-15px;
+  }
+ 
+.footer{
+width:100%;
+margin-top:5px;
+}
+.footer p{
+font-size:10px;
+}
+.footer tr td a {
+height:12px;
+font-weight:bold;
+text-decoration:none;
+}
+.footer h5{
+font-weight:bold;
+text-decoration:none;
+}
+/*=============================== Scroll Bars=============*/
+::-webkit-scrollbar {
+    width: 5px;
+	}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #700325; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #700325; 
+}
+
+/*=====================================media-mobile=============*/
+
+@media (max-width: 768px){
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover { /*this is header media query*/
+    text-decoration:none;
+	color: white;
+    background-color: rgba(127, 193, 175, 0.22);
+	}
+	.new-pad{	
+	padding-left:0px;
+	}
+	.sub-menu{
+	float:none;	
+	}
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a{
+	color:white;
+	}
+	.staff-social{
+        text-align: center;
+    }
+	.small-div-bp{
+       padding: 0px !important;
+
+    }
+    .top_btn_block{
+        display: none;
+    }
+    .social-network {
+        text-align: center !important;
+    }
+}
+#sideone{
+align:left;
+}
+#sideone tr td{
+margin-top:10px;
+padding:5px;
+}
+#sideone tr td img{
+border-color: 1px black;
+}
+
+#theme {
+	background-color: #0d76d8;
+	border: 0;
+	border-radius: 50%;
+	color: #f9f7f7;	
+	cursor: pointer;
+	font-size: 16;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+#theme.light {
+	background-color: #292a2b;
+	color: #f4f2f2;
+}
+body.dark {
+	background-color: #282828;
+	color: #f209bb;
+}
+.modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+</style>
+</head>  
+<body target="_blank">
+<div class="container">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12"> 
+						<!-- header-top-first start --> 
+						<table id="topline"  style="float:right;text-align:center; padding:5px 0 0 5px;">
+							<tbody>
+								<tr>
+									<td width="130"><a style="width: auto;font-size: 13px;height: 25px;" href="#"> Skip to main Content</a> </td>
+									<td width="130"><a style="width: auto;font-size: 13px;height: 25px;" href="screen-reader-access.html">Screen Reader Help</a> </td>
+									<td width="150">
+										<form method="get" action="https://www.google.com/search?g=[value from input-field]" target="_blank" style="margin:auto;max-width:300px">
+											<input placeholder="Search..." type="text" value="" name="q">
+											<button type="submit" value=""><span ><i class="fas fa-search"></i></span></button>
+										</form>
+									</td>
+									<td width="60"><button id="theme">THEME</button></td>
+									<td width="80">
+									<button id="btn-decrease">A-</button>
+									<button id="btn-orig">A</button>
+									<button id="btn-increase">A+</button>
+									</td>
+									<td>
+									<div>
+									<span><a href="contact.html" target="_blank"><i class="fas fa-envelope fa-3x" style="color:Tomato" alt="Contact Us" title="Contact Us"></i></a></span>
+									</div>
+									</td>
+							</tr>
+						</tbody>
+					</table></br></br></br>
+						
+						<!-- header-top-first end --> 
+					</div>
+				</div>
+			</div>
+		</div>
+			<!-- header-top end --> 
+<div class="container">
+			<div class="container">
+				<div class="navbar-header" >
+					<img src="img/gpw.png" width="95%" style="text-align:center">
+				</div>
+			</div>
+		<section>
+			<header class="navbar navbar-inverse  bs-docs-nav new-pad nav-container" role="banner">
+				<div class="container-fluid" style="padding-left:10px">
+					<div class="navbar-header">
+					  <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+					</div>
+					<nav class="collapse navbar-collapse bs-navbar-collapse sub-menu" role="navigation">
+					    <ul class="nav navbar-nav">
+							<li>
+							  <a href="index.html">Home</a>
+							</li>
+							<li class="dropdown test">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">About us<b class="caret"></b></a>
+								<ul class="dropdown-menu sub-panel">									
+									<li><a href="institute.html">Institute</a></li>
+									<li><a href="aicte.html">AICTE EOA</a></li>
+									<li><a href="rti.html"> RTI Act</a></li>
+									<li><a href="schemes.html">Schemes</a></li>
+								</ul>
+						   </li>
+							<li class="dropdown test">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses<b class="caret"></b></a>
+								<ul class="dropdown-menu sub-panel">
+									<li><a href="cse.html">Computer Engineering</a></li>
+									<li><a href="pharmacy.html">Pharmacy</a></li>
+									<li><a href="ece.html">Electronics and Communication Engg.</a></li>
+								</ul>
+						   </li>
+							<li class="dropdown test">
+							  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Student Corner<b class="caret"></b></a>
+							  <ul class="dropdown-menu sub-panel">
+									<li><a href="attendance.html">Attendance Position</a></li>
+									<li><a href="acalendar.html">Academic Calendar</a></li>
+									<li><a href="timetable.html">Time Table</a></li>
+									<li><a href="syll.html">Syllabus</a></li>
+									<li><a href="results.html">Results</a></li>
+									<li><a href="internal.html">Internal Sessional</a></li>
+									<li><a href="tpcell.html">T&P Cell</a></li>
+									<li><a href="gcell.html">Submit your Grievance</a></li>
+									<li><a href="ragging.html">Anti Ragging</a></li>
+								</ul>
+							</li>
+							<li class="dropdown test">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Facilities <b class="caret"></b></a>
+								<ul class="dropdown-menu sub-panel">
+									<li><a href="library.html">Central Library</a></li>
+									<li><a href="hostel.html">Hostels</a></li>
+								</ul>
+							</li>
+							<li class="dropdown test">
+							  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Faculty & Staff<b class="caret"></b></a>
+								<ul class="dropdown-menu sub-panel">
+									<li><a href="staff.html">Staff Details</a></li>
+									<li><a href="structure.html">Staff Structure</a></li>
+								</ul>
+							</li>
+							<li class="dropdown test">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Extra Curricular Activities <b class="caret"></b></a>
+								<ul class="dropdown-menu sub-panel">
+									<li><a href="achievements.html">Achievements</a></li>
+									<li><a href="events.html">Events</a></li>								</ul>
+							</li>
+							<li class="dropdown test">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Information <b class="caret"></b></a>
+								<ul class="dropdown-menu sub-panel">
+									<li><a href="mandatory.html" target="_blank">Mandatory Disclosures</a></li>
+									<li><a href="tender.html">Tender Notices</a></li>
+									<li><a href="advertisement.html">Advertisements</a></li>			
+									<li><a href="gallery.html">College Gallery </a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+		</section>
+<div class="row text-center">
+<div class="col-sm-3">
+			<table >
+				<tbody id="sideone">
+				<tr>
+					<td width="12px" style="background-color:#c9480c"></td>
+					<td style="color:#c9480c; font-weight:bold; text-align:left;"><h4 style="margin-left:10px; font-weight:bold">ACADEMIC CALENDAR 2018-19</strong></h4></td>
+					<td width="12px"></td>
+				</tr>
+				<tr>
+					<td colspan="3"><img src="img/001.jpg" width="100%"></td>
+				</tr>
+				<tr>
+					<td width="12px" height="40px" style="background-color:#c9480c"></td>
+					<td align="left" height="40px" style="background-color:#c9480c"></td>
+					<td width="12px" height="40px" style="background-color:#c9480c"></td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+		<div class="col-sm-7" style="overflow: hidden;">
+			<iframe src="downloads/Academic 2014.pdf" frameborder="0" width="100%" height="650" style="overflow-y: hidden;" scrolling="yes" name="iframe_a"></iframe>
+		</div>
+		<div class="col-sm-2">
+				<!-- START SCROLLING NEWS WINDOW -->
+				<h4 style="color:#e0430f ;font-weight:bold">NEWS & UPDATES</h4>
+				<div id="news_iframe_scroll">
+					<iframe name="NewsIFrame" src="news_scroll.html" frameborder="0" scrolling="no"></iframe>
+				</div>
+				<!-- END SCROLLING NEWS WINDOW -->
+				</br>
+				<div class="container">
+					<table width="200px">
+						<tr>
+							<td width="200px" align="left"><span><h5 data-toggle="modal" data-target="#modalAlumni" style="cursor:pointer"><i class="fas fa-edit fa-2x" style="color:Tomato" alt="Contact Us" title="Contact Us"></i>
+							Online Alumni Registration</h5></span>
+																<!-- Modal -->
+								<div class="modal fade" id="modalAlumni" role="dialog" style="scrolling:yes">
+									<div class="modal-dialog">							
+										<!-- Modal content-->
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<h4 class="modal-title">Online Alumni Registration</h4>
+											</div>
+											<div class="modal-body">
+												<div class="cognito">
+												<script src="https://services.cognitoforms.com/s/P4veYsMEC0-fcmndeX9-dQ"></script>
+												<script>Cognito.load("forms", { id: "1" });</script>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+											</div>								
+										</div>							  
+									</div>
+								</div></br>
+							</td>
+						</tr>
+						<tr>
+							<td width=" 180px" align="left"><a href="https://smarthubeducation.hdfcbank.com/SmartFees/Landing.action?instId=3566" target="_blank"><img src="img/online.gif" width="90%"></a></br></br></td>
+						</tr>
+						<tr>
+							<td width=" 180px" align="left"><span><h4 data-toggle="modal" data-target="#modalIdea" style="cursor:pointer"><i class="fab fa-medapps fa-3x" style="color:Tomato" alt="Contact Us" title="Contact Us"></i>
+							Ideas Lab</h4></span>
+						<!-- Modal -->
+									<div class="modal fade" id="modalIdea" role="dialog">
+										<div class="modal-dialog">							
+										<!-- Modal content-->
+											<div class="modal-content">
+												<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<h4 class="modal-title">IDEAS LAB</h4>
+											</div>
+											<div class="modal-body">
+												<iframe src="https://services.cognitoforms.com/f/P4veYsMEC0-fcmndeX9-dQ?id=2" style="position:relative;width:1px;min-width:100%;*width:100%;" frameborder="0" scrolling="yes" seamless="seamless" height="928" width="100%"></iframe>
+												<script src="https://services.cognitoforms.com/scripts/embed.js"></script>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+											</div>								
+									</div>							  
+									</div>
+								</div></br></td>
+						</tr>
+						<tr>
+							<td width=" 180px" height="25px" style="text-align:left"><a href="https://www.aicte-india.org/feedback/students.php" target="_blank">AICTE STUDENT FEEDBACK</a></td>
+						</tr>
+						<tr>
+							<td width=" 180px" height="25px"style="text-align:left"><a href="https://www.aicte-india.org/feedback/faculty.php" target="_blank">AICTE FACULTY FEEDBACK</a></td>
+						</tr>
+					</table>
+				</div>
+	</div>
+</div>
+<!-- .footer start --> 
+	<div class="container" >
+		<div class="footer">
+			<table  width="100%">
+				<tr>
+					<td width="100%" colspan="7" align="center"> <a href="index.html">Home</a>|<a href="aicteEOA.html">AICTE EOA</a>|<a href="mandatory.html">Mandatory Disclosures</a>|<a href="aicteEOA.html">Terms of Use</a>|<a href="institute.html">Website Policies</a>|<a href="institute.html">Sitemap</a>|<a href="rti.html">RTI Act</a></br></br></td>
+				</tr>
+				<tr style="text-align:center">
+					<td width="16%" align="center"><a href="http://www.himachal.gov.in" target="_blank"><img src="img/hp.gif" width="100%" height="30px"></a></td>
+					<td width="16%" align="center"><a href="http://himachal.nic.in/index.php?lang=1&dpt_id=2" target="_blank"><img src="img/dte.gif" width="100%" height="30px"></a></td>
+					<td width="18%" align="center"><a href="https://www.aicte-india.org/" target="_blank"><img src="img/aicte.gif" width="100%" height="30px"></a></td>
+					<td width="18%" align="center"><a href="http://www.hptechboard.com/" target="_blank"><img src="img/hptsb.gif" width="100%" height="30px"></a></td>
+					<td width="16%" align="center"><a href="http://www.nic.in/" target="_blank"><img src="img/nic.gif" width="100%" height="30px"></a></td>
+					<td width="16%" align="center"><a href="https://swayam.gov.in/" target="_blank"><img src="img/swayam.gif" width="100%" height="30px"></a></td>
+				</tr>
+				<tr>
+					<td width="100%" height="auto" colspan="7" align="center" cellpadding="0"><p>Content on this website is published and managed by Govt.Polytechnic for Women, Kandaghat (Solan), HP, India.<br>For any query regarding Website,Please Contact Web Information Manager, Deptt. of Computer Engg.,gpwkandaghat@gmail.com.<br>Government Polytechnic for Women, Kandaghat (Solan), HP, India. All rights reserved. <br>Best viewed in 1152X864 resolution.</p></td>
+				</tr>
+			</table>
+		</div>
+	</div>			
+<!-- footer end --> 
+<script>
+	var $affectedElements = $("*");
+
+	$affectedElements.each( function(){
+	  var $this = $(this);
+	  $this.data("orig-size", $this.css("font-size") );
+	});
+
+	$("#btn-increase").click(function(){
+	  changeFontSize(1);
+	})
+
+	$("#btn-decrease").click(function(){
+	  changeFontSize(-1);
+	})
+
+	$("#btn-orig").click(function(){
+	  $affectedElements.each( function(){
+			var $this = $(this);
+			$this.css( "font-size" , $this.data("orig-size") );
+	   });
+	})
+
+	function changeFontSize(direction){
+		$affectedElements.each( function(){
+			var $this = $(this);
+			$this.css( "font-size" , parseInt($this.css("font-size"))+direction );
+		});
+	}
+</script>
+<script>
+	// Select elements from the DOM
+		var body = document.querySelector("body");
+		var button = document.querySelector("#theme");
+		// Listen for button clicks
+		button.addEventListener("click", changeThemes);
+		button.addEventListener("click", changeButtonColors);
+		button.addEventListener("click", changeButtonText);
+		// Change theme colors
+		function changeThemes() {
+			body.classList.toggle("dark");
+		}
+		// Change button colors
+		function changeButtonColors() {
+			button.classList.toggle("light");
+		}
+		// Change button text
+		function changeButtonText() {
+		if (button.textContent === "light theme") {
+		button.textContent = "THEME";
+		} else {
+			button.textContent = "THEME";
+		}
+	}
+</script>
+</div>
+</body>
+</html>

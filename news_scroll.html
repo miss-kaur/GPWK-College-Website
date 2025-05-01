@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>News</title>
+
+<base target="_parent">
+
+<link rel="stylesheet" href="news_scroll.css" type="text/css">
+
+</head>
+
+<body class="news-scroll" onMouseover="scrollspeed=0" onMouseout="scrollspeed=current" OnLoad="NewsScrollStart();" target="_blank">
+
+
+<!-- START NEWS FEED -->
+<div id="NewsDiv">
+<div class="scroll-text-if">
+
+<!-- SCROLLER CONTENT STARTS HERE -->
+
+
+
+
+
+
+<span class="scroll-title-if">
+Ideas Lab<br>
+</span>
+
+Students are invited to submit their innovative ideas to their respective HOD's or directly on the website. 
+
+<a href="news.htm">Sample Link</a>.
+
+<br><br>
+
+
+
+
+
+
+<span class="scroll-title-if">
+Results<br>
+</span>
+
+Results of 3rd Semester and 5th Semester are out. Kindly go thru the Student Section for details. 
+
+<a href="news.htm">Sample Link</a>.
+
+<br><br>
+
+
+
+
+
+
+<span class="scroll-title-if">
+Tender Notice<br>
+</span>
+
+Bids are invited from the eligible bidder for Fire Equipments Tendet. Kindly go to the Tender Notices under Notice Board for details and download. 
+
+<a href="news.htm">Sample Link</a>.
+
+<br><br>
+
+
+
+
+
+
+<span class="scroll-title-if">
+PM Kaushal Vikas Yojana<br>
+</span>
+
+The institute is likely to start free-of-cost ITES course under PMKVY of Govt. of India. For details visit this institution at any working day between 9:00Am to 5:00PM 
+
+<a href="news.htm">Sample Link</a>.
+
+<br>
+
+
+
+
+
+
+<!-- END SCROLLER CONTENT -->
+
+</div>
+</div>
+<!-- END NEWS FEED -->
+
+
+
+
+<!-- YOU DO NOT NEED TO EDIT BELOW THIS LINE -->
+
+<script type="text/javascript">
+
+
+var startdelay 		= 2; 		// START SCROLLING DELAY IN SECONDS
+var scrollspeed		= 1.1;		// ADJUST SCROLL SPEED
+var scrollwind		= 1;		// FRAME START ADJUST
+var speedjump		= 30;		// ADJUST SCROLL JUMPING = RANGE 20 TO 40
+var nextdelay		= 0; 		// SECOND SCROLL DELAY IN SECONDS 0 = QUICKEST
+var topspace		= "2px";	// TOP SPACING FIRST TIME SCROLLING
+var frameheight		= 275;		// IF YOU RESIZE THE CSS HEIGHT, EDIT THIS HEIGHT TO MATCH
+
+
+current = (scrollspeed);
+
+
+function HeightData(){
+AreaHeight=dataobj.offsetHeight
+if (AreaHeight===0){
+setTimeout("HeightData()",( startdelay * 1000 ))
+}
+else {
+ScrollNewsDiv()
+}}
+
+function NewsScrollStart(){
+dataobj=document.all? document.all.NewsDiv : document.getElementById("NewsDiv")
+dataobj.style.top=topspace
+setTimeout("HeightData()",( startdelay * 1000 ))
+}
+
+function ScrollNewsDiv(){
+dataobj.style.top=scrollwind+'px';
+scrollwind-=scrollspeed;
+if (parseInt(dataobj.style.top)<AreaHeight*(-1)) {
+dataobj.style.top=frameheight+'px';
+scrollwind=frameheight;
+setTimeout("ScrollNewsDiv()",( nextdelay * 1000 ))
+}
+else {
+setTimeout("ScrollNewsDiv()",speedjump)
+}}
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+       <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Staff Position| Government Polytechnic for Women, Kandaghat</title>
+    <!-- Bootstrap -->
+	<script src="js/uisearch.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="fonts/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/social.css" rel="stylesheet">
+	<link rel="stylesheet" href="news_scroll.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald|Asap">
+	<link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css">
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"> </script> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+ <style>
+*{
+	font: 300 13px Lato, sans-serif;
+	text-decoration:none;
+	box-sizing: border-box;
+	cursor:pointer;
+ }
+body{ 
+	margin:0;
+	align:center;
+	padding-top: 10px;
+	}
+#topline button{
+	float: left;
+    padding: 5px;
+	background: tomato;
+    color: white;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+}
+#topline button:hover{
+background: #669900;
+}
+#topline input[type=text] {
+	padding: 5px;
+    font-size: 10px;
+   	float: left;
+    width:80%;
+    background: white;
+}
+#topline::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.new-pad{
+	margin-bottom: 0px;
+	background-color: rgba(71, 76, 76, 0.64);
+}
+.navbar{
+	width:100%;
+	margin-top:0;
+	z-index:4;
+}
+.navbar-inverse {
+    background-color: #ffffff;
+	margin-top:5px;
+	border:none;
+}
+.sub-menu{
+float:right;
+}
+.navbar-nav>li>a {
+	width:100%;
+	color:#800040;
+	font-size:13px;
+	font-weight:bold;
+	line-height: 15px;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 12px 7px;
+	text-transform:capitalize;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #661400;
+	font-size: 13px;
+    font-weight:bold;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+    color:#800040;
+    background-color:#fff;
+	border-radius: 5px;
+}
+.navbar-inverse .navbar-nav>li>a::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    background: #000;
+	color:#ff0066;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    -webkit-transition: all 0.60s;
+    -moz-transition: all 0.60s;
+    -o-transition: all 0.60s;
+    transition: all 0.60s;
+}
+.navbar-inverse .navbar-nav>li>a:hover::after {
+    width: 100%;
+    -webkit-transition: all 0.60s;
+    -moz-transition: all 0.60s;
+    -o-transition: all 0.60s;
+    transition: all 0.60s;
+}
+.navbar-inverse .navbar-nav>.active>a{
+	background-color: rgba(255, 255, 255, 0);
+}
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: rgba(127, 193, 175, 0.22);
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color: #000;
+    background-color: rgba(127, 193, 175, 0.22);
+}
+.dropdown-menu {
+	background-color: rgba(255, 200, 210, 0.3);
+	color:#fff;
+}
+.sub-panel li a{
+	text-transform:capitalize;
+	text-shadow: 0 1px 1px rgba(0,0,0,.2);
+	font-size: 13px;
+    font-weight:bold;
+	background-color: rgba(0, 0, 153, 0.6);
+	color:rgb(255, 255, 0);
+	
+}
+.test:hover .dropdown-menu{
+	display:block;
+	background-color:rgba(255, 51, 0, 0.6);
+	color:black;
+}
+.card {
+  height: 100%;
+  margin-top:20px;
+   }
+#myCarousel{
+	margin-top:5px;
+	border-radius:30px;
+   width:100%;
+   overflow:hidden;
+   z-index:1;
+   margin-left:-15px;
+  }
+.wrapper{
+width:350px;
+height:15px;
+}
+.footer{
+width:100%;
+margin-top:5px;
+}
+.footer p{
+font-size:10px;
+}
+.footer tr td a {
+height:12px;
+font-weight:bold;
+text-decoration:none;
+}
+.footer h5{
+font-weight:bold;
+text-decoration:none;
+}
+
+/*=====================================media-mobile=============*/
+
+@media (max-width: 768px){
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover { /*this is header media query*/
+    text-decoration:none;
+	color: white;
+    background-color: rgba(127, 193, 175, 0.22);
+	}
+	.new-pad{	
+	padding-left:0px;
+	}
+	.sub-menu{
+	float:none;	
+	}
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a{
+	color:white;
+	}
+	.staff-social{
+        text-align: center;
+    }
+	.small-div-bp{
+       padding: 0px !important;
+
+    }
+    .top_btn_block{
+        display: none;
+    }
+    .social-network {
+        text-align: center !important;
+    }
+}
+#theme {
+	background-color: #0d76d8;
+	border: 0;
+	border-radius: 50%;
+	color: #f9f7f7;	
+	cursor: pointer;
+	font-size: 16;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+#theme.light {
+	background-color: #292a2b;
+	color: #f4f2f2;
+}
+body.dark {
+	background-color: #282828;
+	color: #f209bb;
+}
+.modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+</style>
+</head>  
+<body>
+<div class="container">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12"> 
+						<!-- header-top-first start --> 
+						<table id="topline"  style="float:right;text-align:center; padding:5px 0 0 5px;">
+							<tbody>
+								<tr>
+									<td width="130"><a style="width: auto;font-size: 13px;height: 25px;" href="#"> Skip to main Content</a> </td>
+									<td width="130"><a style="width: auto;font-size: 13px;height: 25px;" href="screen-reader-access.html">Screen Reader Help</a> </td>
+									<td width="150">
+									<form method="get" action="https://www.google.com/search?g=[value from input-field]" target="_blank" style="margin:auto;max-width:300px">
+										<input placeholder="Search..." type="text" value="" name="q">
+										<button type="submit" value=""><span ><i class="fas fa-search"></i></span></button>
+									</form>
+									</td>
+									<td width="60"><button id="theme">THEME</button></td>
+									<td width="80">
+									<button id="btn-decrease">A-</button>
+									<button id="btn-orig">A</button>
+									<button id="btn-increase">A+</button>
+									</td>
+									<td>
+									<div>
+									<span><a href="contact.html" target="_blank"><i class="fas fa-envelope fa-3x" style="color:Tomato" alt="Contact Us" title="Contact Us"></i></a></span>
+									</div>
+									</td>
+							</tr>
+						</tbody>
+					</table></br></br></br>
+						
+						<!-- header-top-first end --> 
+					</div>
+				</div>
+			</div>
+		</div>
+			<!-- header-top end --> 
+<div class="container">
+			<div class="container">
+				<div class="navbar-header" >
+					<img src="img/gpw.png" width="95%" style="text-align:center">
+				</div>
+			</div>
+		<section>
+			<header class="navbar navbar-inverse  bs-docs-nav new-pad nav-container" role="banner">
+				<div class="container-fluid" style="padding-left:10px">
+					<div class="navbar-header">
+					  <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+					</div>
+					<nav class="collapse navbar-collapse bs-navbar-collapse sub-menu" role="navigation">
+					    <ul class="nav navbar-nav">
+							<li>
+							  <a href="index.html">Home</a>
+							</li>
+							<li class="dropdown test">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">About us<b class="caret"></b></a>
+								<ul class="dropdown-menu sub-panel">									
+									<li><a href="institute.html">Institute</a></li>
+									<li><a href="aicte.html">AICTE EOA</a></li>
+									<li><a href="rti.html"> RTI Act</a></li>
+									<li><a href="schemes.html">Schemes</a></li>
+								</ul>
+						   </li>
+							<li class="dropdown test">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses<b class="caret"></b></a>
+								<ul class="dropdown-menu sub-panel">
+									<li><a href="cse.html">Computer Engineering</a></li>
+									<li><a href="pharmacy.html">Pharmacy</a></li>
+									<li><a href="ece.html">Electronics and Communication Engg.</a></li>
+								</ul>
+						   </li>
+							<li class="dropdown test">
+							  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Student Corner<b class="caret"></b></a>
+							  <ul class="dropdown-menu sub-panel">
+									<li><a href="attendance.html">Attendance Position</a></li>
+									<li><a href="acalendar.html">Academic Calendar</a></li>
+									<li><a href="timetable.html">Time Table</a></li>
+									<li><a href="syll.html">Syllabus</a></li>
+									<li><a href="results.html">Results</a></li>
+									<li><a href="internal.html">Internal Sessional</a></li>
+									<li><a href="tpcell.html">T&P Cell</a></li>
+									<li><a href="gcell.html">Submit your Grievance</a></li>
+									<li><a href="ragging.html">Anti Ragging</a></li>
+								</ul>
+							</li>
+							<li class="dropdown test">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Facilities <b class="caret"></b></a>
+								<ul class="dropdown-menu sub-panel">
+									<li><a href="library.html">Central Library</a></li>
+									<li><a href="hostel.html">Hostels</a></li>
+								</ul>
+							</li>
+							<li class="dropdown test">
+							  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Faculty & Staff<b class="caret"></b></a>
+								<ul class="dropdown-menu sub-panel">
+									<li><a href="staff.html">Staff Details</a></li>
+									<li><a href="structure.html">Staff Structure</a></li>
+								</ul>
+							</li>
+							<li class="dropdown test">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Extra Curricular Activities <b class="caret"></b></a>
+								<ul class="dropdown-menu sub-panel">
+									<li><a href="achievements.html">Achievements</a></li>
+									<li><a href="events.html">Events</a></li>								</ul>
+							</li>
+							<li class="dropdown test">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Information <b class="caret"></b></a>
+								<ul class="dropdown-menu sub-panel">
+									<li><a href="mandatory.html" target="_blank">Mandatory Disclosures</a></li>
+									<li><a href="tender.html">Tender Notices</a></li>
+									<li><a href="advertisement.html">Advertisements</a></li>			
+									<li><a href="gallery.html">College Gallery </a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+		</section>
+
+<div class="row text-center">
+	<div class="col-sm-10">
+		<table width="90%" border="0" align="left" cellpadding="1" cellspacing="1">      
+			<tbody>
+				<tr>       
+					<td style="text-align:left"><h3 style="margin-left:10px; font-weight:bold; color:#c9480c;">PRINCIPAL</h3></td>     
+				</tr>	  	     
+				<tr>        
+					<td><span class="style1"><br></span><br>          
+						<table width="80%" border="0" align="left" cellpadding="3" cellspacing="3">            
+							<tbody>
+								<tr>              
+									<td width="37%" height="30" bgcolor="#ccff33" align="center"> <strong>Name</strong></td>              
+									<td width="49%" bgcolor="#ccff33" ><strong>Designation</strong></td>             
+									<td width="49%" bgcolor="#ccff33" ><b>Contact No/E-mail id  </td>            
+								</tr>            
+								<tr>              
+									<td height="30" bgcolor="#99ffcc" align="center"><p class="style3"><b>Er.Vinita arya </p ></td>             
+									<td bgcolor="#99ffcc"><span class="style3"><b>PRINCIPAL</span></td>             
+									<td bgcolor="#99ffcc"><b><p>01792-256179</p><b><p>gpwkandaghat@gmail.com</p></td>            
+								</tr>
+							</tbody>
+						</table>      
+					</td>      
+				</tr>	     
+				<tr>
+					<td style="text-align:left"><h3 style="margin-left:10px; font-weight:bold; color:#c9480c;">FACULTY DETAILS</h3></td>
+				</tr>     
+				<tr>        
+					<td style="text-align:left"><h4 style="margin-left:10px; font-weight:bold; color:#c9480c;">COMPUTER  ENGINEERING DEPARTMENT</h4></td>      
+				</tr>      
+					<tr>  
+						<td>
+							<table width="80%" border="0" align="left" cellpadding="3" cellspacing="3">          
+								<tbody>	
+									<tr>       
+										<td style="text-align:left"width="14%" height="30" bgcolor="#ccff33"><strong>S.No.</strong></td>            
+										<td style="text-align:left"width="25%" bgcolor="#ccff33" ><strong>Name</strong></td>            
+										<td style="text-align:left"width="30%" bgcolor="#ccff33" ><strong>Designation</strong></td>            
+										<td style="text-align:left"width="49%" bgcolor="#ccff33"><b>Contact No/E-mail id </td>
+									</tr>  
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc">1.</td>            
+										<td style="text-align:left"bgcolor="#99ffcc"><strong>Mr.Pankaj Pathik </strong></td>            
+										<td style="text-align:left"bgcolor="#99ffcc"><strong>HOD(Computer Engg.)</strong></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">94180-06964 pankaj.pathik@gmail.com </td>
+									</tr>
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc">2.</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Er. Sandeep Khimta </strong></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sr.Lecturer</strong></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">98822-45944 sandeep_khimta@yahoo.com </td>
+									</tr>          
+									<tr>            
+										<td style="text-align:left"height="30" bgcolor="#99ffcc">3.</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Er. Nirlep Rana</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Lecturer</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">94180-56264 nirlep.rana@gmail.com </td>
+									</tr> 
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc">4.</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Er. Kuldeep Kumar </strong></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Lecturer</strong></td>            
+										<td style="text-align:left"bgcolor="#99ffcc"> </td>
+									</tr>  
+									<tr>            
+										<td style="text-align:left"height="30" bgcolor="#99ffcc">5.</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Er.Amit Nayyer</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Lecturer</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">98821-88791 nayyer.amit@gmail.com </td>
+									</tr>  
+									<tr>            
+										<td style="text-align:left"height="30" bgcolor="#99ffcc">6.</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Ms.Rohika Bhatt</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Lecturer</td>            
+										<td style="text-align:left"bgcolor="#99ffcc"> 97368-68999</td>
+									</tr> 
+									<tr>            
+										<td style="text-align:left"height="30" bgcolor="#99ffcc">7.</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Er.Neena</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Lecturer</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">8288009874 </td>
+									</tr> 
+									<tr>            
+										<td style="text-align:left"height="30" bgcolor="#99ffcc">8.</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Er.Lalit Himral</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Lecturer</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">9805306474 </td>
+									</tr> 
+									<tr>
+										<td style="text-align:left"height="30" bgcolor="#99ffcc">9.</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Ms.Anita Bhardwaj</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">Computer Assistant</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">94183-23465 ani.gem71@gmail.com </td>          
+									</tr>          
+									<tr>            
+										<td style="text-align:left"height="30" bgcolor="#99ffcc">10.</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Ms.Shruti</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">Computer assistant</td>           
+										<td style="text-align:left"bgcolor="#99ffcc"> 94180-11983 shrutiv1983@gmail.com </td>          
+									</tr>          
+									<tr>
+										<td style="text-align:left"height="30" bgcolor="#99ffcc">11.</td>   
+										<td style="text-align:left"bgcolor="#99ffcc">Mr.Jeevan Dhiman</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">Computer Assistant</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">94596-92931 dhiman.jeevan@gmail.com</td>          
+									</tr> 
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr><td>&nbsp;</td></tr> 
+				<tr>        
+					<td style="text-align:left"><h4 style="margin-left:10px; font-weight:bold; color:#c9480c;">ELECTRONICS AND COMMUNICATION ENGINEERING</h4> </td>      
+				</tr>      
+					<tr>  
+						<td>
+							<table width="80%" border="0" align="left" cellpadding="3" cellspacing="3">          
+								<tbody>
+									<tr>       
+										<td style="text-align:left"width="14%" height="30" bgcolor="#ccff33"><div align="center"><strong>S.No.</strong></div></td>            
+										<td style="text-align:left"width="37%" bgcolor="#ccff33" ><strong>Name</strong></td>            
+										<td style="text-align:left"width="49%" bgcolor="#ccff33" ><strong>Designation</strong></td>            
+										<td style="text-align:left"width="49%" bgcolor="#ccff33"><b>Contact No/E-mail id </td>
+									</tr>   
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">1.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc"><strong><strong>Er.Rakesh Sharma </strong></td>            
+										<td style="text-align:left"bgcolor="#99ffcc"><strong>HOD (ECE)</strong></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">9418168785 rakeshparu@gmail.com </td>
+									</tr>       
+									<!---<tr> <td height="30" bgcolor="#99ffcc"><div align="center">2</div></td>            
+										<td bgcolor="#99ffcc">Er. Mukesh Chauhan </strong></td>            
+										<td bgcolor="#99ffcc">Lecturer</strong></td>            
+										<td bgcolor="#99ffcc">94184-01385 rockystarmc@gmail.com </td>
+									</tr>---->               
+									<tr>
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">2.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Er.Nishi Verma</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">Lecturer</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">94184-91633 Nishiverma2007@gmail.com </td>          
+									</tr> 
+									<tr>
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">3.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Er.Satish Kumar</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">Lecturer</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">94183-20493 satishmalpa@gmail.com </td>          
+									</tr>
+									<tr>
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">4.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Er.Neha Badhan</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">Lecturer</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">94596-83654 nehabadhan2@gmail.com </td>          
+									</tr>  
+									<tr>
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"> <div align="center">5.</div></td>             
+										<td style="text-align:left"bgcolor="#99ffcc">Er.Vikas Kashyap</td>             
+										<td style="text-align:left"bgcolor="#99ffcc">Lecturer(Electrical Engineering)</td>             
+										<td style="text-align:left"bgcolor="#99ffcc">97363-12343  </td>           
+									</tr> 
+									<tr>
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">6.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Er. Kislaye Sharma</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">Lecturer</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">98167-87446 </td>          
+									</tr> 
+									<tr>   
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">7.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Er. Mrikulesh Sharma</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">Lecturer</td>            
+										<td style="text-align:left"bgcolor="#99ffcc"> </td>          
+									</tr>           
+									<tr>            
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">8.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh.Atul Sharma</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">Audio-Video Technician</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">  94594-41243 sharma6123@gmail.com </td>          
+									</tr>
+									<tr>            
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">9.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh.Hari Nand</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">Foreman Instructor</td>           
+										<td style="text-align:left"bgcolor="#99ffcc"> 94184-99639 </td>          
+									</tr>
+									<tr>            
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">10.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh.Jagdish Dhiman</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">Electrical Instructor</td>           
+										<td style="text-align:left"bgcolor="#99ffcc"> 94590-75681 </td>          
+									</tr>
+									<tr>            
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">11.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh.Amit Sharma</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">Electrical Instructor</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">   </td>          
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr><td>&nbsp;</td></tr> 
+				<tr>        
+					<<td style="text-align:left"><h4 style="margin-left:10px; font-weight:bold; color:#c9480c;">PHARMACY</h4> </td>      
+				</tr>      
+					<tr>  
+						<td>
+							<table width="80%" border="0" align="left" cellpadding="3" cellspacing="3">          
+								<tbody>	
+									<tr>       
+										<td style="text-align:left"width="14%" height="30" bgcolor="#ccff33"><div align="center"><strong>S.No.</strong></div></td>            
+										<td style="text-align:left"width="37%" bgcolor="#ccff33" ><strong>Name</strong></td>            
+										<td style="text-align:left"width="49%" bgcolor="#ccff33" ><strong>Designation</strong></td>            
+										<td style="text-align:left"width="49%" bgcolor="#ccff33"><b>Contact No/E-mail id </td>
+									</tr>          
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"align="center">1.</td>            
+										<td style="text-align:left"bgcolor="#99ffcc"><strong>Sh.K.S.Pathania </strong></td>            
+										<td style="text-align:left"bgcolor="#99ffcc"><strong>HOD (Pharmacy)</strong></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">94181-33295</td>
+									</tr>          
+									<tr>
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">2.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Smt. Kusum</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">Lecturer</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">94184-62163 punkusum@gmail.com </td>          
+									</tr>          
+									<tr>            
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">3.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh.Neeraj Gupta</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">Lecturer</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">94184-56957 neerajgupta957@gmail.com</td>          
+									</tr>          
+									<tr>            
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">4.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh.Anshul shandil</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">Lecturer</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">94184-73020 anshulshandil@rediffmail.com</td>          
+									</tr> 
+									<tr>            
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">5.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh.Uday Chauhan</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">Lecturer</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">98160-27601 udayparasian@gmail.com</td>          
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr><td>&nbsp;</td></tr> 
+				<tr>
+					<td style="text-align:left"><h4 style="margin-left:10px; font-weight:bold; color:#c9480c;">APPLIED SCIENCE & HUMANITIES</h4></td>          
+				</tr>
+				<tr>
+					<td>
+						<table width="80%" border="0" align="left" cellpadding="3" cellspacing="3">           
+							<tbody>
+								<tr>
+									<td style="text-align:left"width="14%" height="30" bgcolor="#ccff33"><div align="center"><strong>S.No.</strong></div></td>              
+									<td style="text-align:left"width="37%" bgcolor="#ccff33" ><strong>Name</strong></td>             
+									<td style="text-align:left"width="49%" bgcolor="#ccff33" ><strong>Designation</strong></td>             
+									<td style="text-align:left"width="49%" bgcolor="#ccff33" ><b>Contact No/E-mail id </td>            
+								</tr>            
+								<tr>              
+									<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">1.</div></td>             
+									<td style="text-align:left"bgcolor="#99ffcc"><strong>Dr.Ruchika Chauhan</strong></td>             
+									<td style="text-align:left"bgcolor="#99ffcc"><strong><Strong>HOD(ASH) </strong></td>              
+									<td style="text-align:left"bgcolor="#99ffcc">94180-35558 ruchikaphd@gmail.com</td>
+								</tr> 
+								<tr>              
+									<td style="text-align:left"height="30" bgcolor="#99ffcc"> <div align="center">2.</div></td>             
+									<td style="text-align:left"bgcolor="#99ffcc">Dr.Shalini Thakur</td>             
+									<td style="text-align:left"bgcolor="#99ffcc">Lecturer(English)</td>             
+									<td style="text-align:left"bgcolor="#99ffcc">94189-29000 shakap4@gmail.com </td>           
+								</tr> 
+								<tr>              
+									<td style="text-align:left"height="30" bgcolor="#99ffcc"> <div align="center">3.</div></td>             
+									<td style="text-align:left"bgcolor="#99ffcc">Mrs.Nalini Mahajan</td>              
+									<td style="text-align:left"bgcolor="#99ffcc">Lecturer(Management) & T.P.O</td>             
+									<td style="text-align:left"bgcolor="#99ffcc">98160-33785  </td>            
+								</tr>
+								<tr>              
+									<td style="text-align:left"height="30" bgcolor="#99ffcc"> <div align="center">4.</div></td>             
+									<td style="text-align:left"bgcolor="#99ffcc">Ms.Tara Khachi</td>             
+									<td style="text-align:left"bgcolor="#99ffcc">Lecturer Maths</td>             
+									<td style="text-align:left"bgcolor="#99ffcc">98168-09723 tarakhachi@gmail.com </td>           
+								</tr>
+								<tr>              
+									<td style="text-align:left"height="30" bgcolor="#99ffcc"> <div align="center">5.</div></td>             
+									<td style="text-align:left"bgcolor="#99ffcc">Ms.Veena Sharma</td>             
+									<td style="text-align:left"bgcolor="#99ffcc">Lecturer English</td>             
+									<td style="text-align:left"bgcolor="#99ffcc"> </td>           
+								</tr>
+								<tr>              
+									<td style="text-align:left"height="30" bgcolor="#99ffcc"> <div align="center">6.</div></td>             
+									<td style="text-align:left"bgcolor="#99ffcc">Sh.Rajender Kumar</td>             
+									<td style="text-align:left"bgcolor="#99ffcc">Lecturer Chemistry</td>             
+									<td style="text-align:left"bgcolor="#99ffcc">94189-80100 </td>           
+								</tr> 
+								<tr> 
+									<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">7.</div></td>            
+									<td style="text-align:left"bgcolor="#99ffcc">Smt.Meena Sharma </td>            
+									<td style="text-align:left"bgcolor="#99ffcc">Instructor M.O.P</td>            
+									<td style="text-align:left"bgcolor="#99ffcc"> </td>
+								</tr>
+							</tbody>	
+						</table>          
+					</td> 
+				</tr> 
+				<tr>        
+					<td style="text-align:left"><h4 style="margin-left:10px; font-weight:bold; color:#c9480c;">WORKSHOP STAFF </h4></td>      
+				</tr>      
+					<tr>  
+						<td>
+							<table width="80%" border="0" align="left" cellpadding="3" cellspacing="3">          
+								</tbody>	
+									<tr>       
+										<td style="text-align:left"width="14%" height="30" bgcolor="#ccff33"><div align="center"><strong>S.No.</strong></div></td>            
+										<td style="text-align:left"width="37%" bgcolor="#ccff33" ><strong>Name</strong></td>            
+										<td style="text-align:left"width="49%" bgcolor="#ccff33" ><strong>Designation</strong></td>            
+										<td style="text-align:left"width="49%" bgcolor="#ccff33"><b>Contact No/E-mail id </td>
+									</tr>   
+									<tr>
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">1.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Mr.LoveKishore</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">Workshop Supdtt.</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">94188-70343  lovek343@gmail.com</td>          
+									</tr>        
+									<tr>
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">2.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Mr.Vinod Kumar</td>           
+										<td style="text-align:left"bgcolor="#99ffcc">W/S Instructor(Machining)</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">94184-71266</td>          
+									</tr>
+								</tbody>	
+							</table>
+						</td>
+					</tr>
+					<tr><td>&nbsp;</td></tr>  
+				<tr>        
+					<td style="text-align:left"><h4 style="margin-left:10px; font-weight:bold; color:#c9480c;">ADMINISTRATIVE STAFF </h4></td>      
+				</tr>      
+					<tr>  
+						<td>
+							<table width="80%" border="0" align="left" cellpadding="3" cellspacing="3">          
+								<tbody>	
+									<tr>       
+										<td style="text-align:left"width="14%" height="30" bgcolor="#ccff33"><div align="center"><strong>S.No.</strong></div></td>            
+										<td style="text-align:left"width="37%" bgcolor="#ccff33" ><strong>Name</strong></td>            
+										<td style="text-align:left"width="20%" bgcolor="#ccff33" ><strong>Designation</strong></td>            
+										<td style="text-align:left"width="49%" bgcolor="#ccff33"><b>Contact No/E-mail id </td>
+									</tr>          
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">1.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc"><strong>Sh.Surinder Thakur </strong></td>            
+										<td style="text-align:left"bgcolor="#99ffcc"><strong>Office Supdtt</strong></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">94592-54794</td>
+									</tr>
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">2.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh.Polastaye Sharma</td>            
+										<td style="text-align:left"bgcolor="#99ffcc"></td>            
+										<td style="text-align:left"bgcolor="#99ffcc"> </td>
+									</tr>
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">3.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Smt.Meenakshi </td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Librarian</td>            
+										<td style="text-align:left"bgcolor="#99ffcc"> </td>
+									</tr>
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">4.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Smt.Veena Sharma </td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Hostel warden</td>            
+										<td style="text-align:left"bgcolor="#99ffcc"> </td>
+									</tr>
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">5.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh. Satish Chauhan</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">P.T.I</strong></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">94590-91540 </td>
+									</tr>
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">6.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh.Roshan Lal </td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Lab Asstt. </td>            
+										<td style="text-align:left"bgcolor="#99ffcc">97363-03313 </td>
+									</tr>
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">7.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh.Dinesh Kumar </td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Lab Asstt. </td>            
+										<td style="text-align:left"bgcolor="#99ffcc"> </td>
+									</tr>
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">8.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh.Sees ram</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Lab Assistant/Technician</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">97360-72234 </td>
+									</tr>
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">9.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh.Sunder singh </td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Lab Assistant/Technician</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">98057-13346 </td>
+									</tr>
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">10.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh.Surinder Kumar </td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Lab Assistant/Technician</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">98175-19847 </td>
+									</tr>
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">11.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh.Des Raj </td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Lab Assistant/Technician</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">998166-56447 </td>
+									</tr>
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">12.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh.Madan Gopal </td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Lab Technician</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">94598 38470 </td>
+									</tr>
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">13.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh.Rameshwar</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Lab Attendent</td>            
+										<td style="text-align:left"bgcolor="#99ffcc"> </td>
+									</tr> 
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">14.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh.PatRam </td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Driver</td>            
+										<td style="text-align:left"bgcolor="#99ffcc"> </td>
+									</tr>
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">15.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh.Bhagwan Singh </td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Chowkidar</td>            
+										<td style="text-align:left"bgcolor="#99ffcc"> </td>
+									</tr>
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">16.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh.Sohan Lal </td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Mali</td>            
+										<td style="text-align:left"bgcolor="#99ffcc"> </td>
+									</tr>
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">17.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh.LekhRam</td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Peon</td>            
+										<td style="text-align:left"bgcolor="#99ffcc"> </td>
+									</tr>
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">18.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh.Devender </td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Peon</strong></td>            
+										<td style="text-align:left"bgcolor="#99ffcc"> </td>
+									</tr>
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">19.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sh.Ram Niwas </td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sweeper</td>            
+										<td style="text-align:left"bgcolor="#99ffcc"> </td>
+									</tr>
+									<tr> 
+										<td style="text-align:left"height="30" bgcolor="#99ffcc"><div align="center">20.</div></td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Smt.Kavita </td>            
+										<td style="text-align:left"bgcolor="#99ffcc">Sweeper</td>            
+										<td style="text-align:left"bgcolor="#99ffcc"> </td>
+									</tr>
+								</tbody>	
+							</table>
+						</td>
+					</tr>
+					<tr><td>&nbsp;</td></tr>
+			</tbody>
+		</table>	
+	</div>
+<div class="col-sm-2">
+				<!-- START SCROLLING NEWS WINDOW -->
+				<h4 style="color:#e0430f ;font-weight:bold">NEWS & UPDATES</h4>
+				<div id="news_iframe_scroll">
+					<iframe name="NewsIFrame" src="news_scroll.html" frameborder="0" scrolling="no"></iframe>
+				</div>
+				<!-- END SCROLLING NEWS WINDOW -->
+				</br>
+				<div class="container">
+						<table width="220px">
+							<tr>
+								<td width="200px" align="center"><span><h5 data-toggle="modal" data-target="#modalAlumni" style="cursor:pointer"><i class="fas fa-edit fa-2x" style="color:Tomato" alt="Contact Us" title="Contact Us"></i>
+							Online Alumni Registration</h5></span>
+									<!-- Modal -->
+								<div class="modal fade" id="modalAlumni" role="dialog" style="scrolling:yes">
+									<div class="modal-dialog">							
+										<!-- Modal content-->
+										<div class="modal-content">
+												<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<h4 class="modal-title">Online Alumni Registration</h4>
+												</div>
+											<div class="modal-body">
+												<div class="cognito">
+												<script src="https://services.cognitoforms.com/s/P4veYsMEC0-fcmndeX9-dQ"></script>
+												<script>Cognito.load("forms", { id: "1" });</script>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+											</div>								
+										</div>							  
+									</div>
+								</div></br></td>
+							</tr>
+							<tr>
+								<td width=" 220px" align="center"><a href="https://smarthubeducation.hdfcbank.com/SmartFees/Landing.action?instId=3566" target="_blank"><img src="img/online.gif" width="70%"></a></td>
+							</tr>
+							<tr>
+								<td width=" 180px" align="center"><span><h5 data-toggle="modal" data-target="#modalIdea" style="cursor:pointer"><i class="fab fa-medapps fa-3x" style="color:Tomato" alt="Contact Us" title="Contact Us"></i>
+							Ideas Lab</h5></span>
+									<!-- Modal -->
+									<div class="modal fade" id="modalIdea" role="dialog">
+										<div class="modal-dialog">							
+										<!-- Modal content-->
+											<div class="modal-content">
+												<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<h4 class="modal-title">IDEAS LAB</h4>
+											</div>
+											<div class="modal-body">
+												<iframe src="https://services.cognitoforms.com/f/P4veYsMEC0-fcmndeX9-dQ?id=2" style="position:relative;width:1px;min-width:100%;*width:100%;" frameborder="0" scrolling="yes" seamless="seamless" height="928" width="100%"></iframe>
+												<script src="https://services.cognitoforms.com/scripts/embed.js"></script>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+											</div>								
+									</div>							  
+									</div>
+								</div></br></td>
+							</tr>
+						<tr>
+							<td width=" 220px" style="text-align:center"><a href="https://www.aicte-india.org/feedback/students.php" target="_blank"><h5>AICTE STUDENT FEEDBACK</h5></a></td>
+						</tr>
+						<tr>
+							<td width=" 220px" style="text-align:center"><a href="https://www.aicte-india.org/feedback/faculty.php" target="_blank"><h5>AICTE FACULTY FEEDBACK</h5></a></td>
+						</tr>
+					</table>
+				</div>
+		</div>
+</div>
+<!-- .footer start --> 
+	<div class="container" >
+		<div class="footer">
+			<table  width="100%">
+				<tr>
+					<td width="100%" colspan="7" align="center"> <a href="index.html">Home</a>|<a href="aicteEOA.html">AICTE EOA</a>|<a href="mandatory.html">Mandatory Disclosures</a>|<a href="aicteEOA.html">Terms of Use</a>|<a href="institute.html">Website Policies</a>|<a href="institute.html">Sitemap</a>|<a href="rti.html">RTI Act</a></td>
+				</tr>
+				<tr style="text-align:center">
+					<td width="16%" align="center"><a href="http://www.himachal.gov.in" target="_blank"><img src="img/hp.gif" width="100%" height="30px"></a></td>
+					<td width="16%" align="center"><a href="http://himachal.nic.in/index.php?lang=1&dpt_id=2" target="_blank"><img src="img/dte.gif" width="100%" height="30px"></a></td>
+					<td width="18%" align="center"><a href="https://www.aicte-india.org/" target="_blank"><img src="img/aicte.gif" width="100%" height="30px"></a></td>
+					<td width="18%" align="center"><a href="http://www.hptechboard.com/" target="_blank"><img src="img/hptsb.gif" width="100%" height="30px"></a></td>
+					<td width="16%" align="center"><a href="http://www.nic.in/" target="_blank"><img src="img/nic.gif" width="100%" height="30px"></a></td>
+					<td width="16%" align="center"><a href="https://swayam.gov.in/" target="_blank"><img src="img/swayam.gif" width="100%" height="30px"></a></td>
+				</tr>
+				<tr>
+					<td width="100%" height="auto" colspan="7" align="center" cellpadding="0"><p>Content on this website is published and managed by Govt.Polytechnic for Women, Kandaghat (Solan), HP, India.<br>For any query regarding Website,Please Contact Web Information Manager, Deptt. of Computer Engg.,gpwkandaghat@gmail.com.<br>Government Polytechnic for Women, Kandaghat (Solan), HP, India. All rights reserved. <br>Best viewed in 1152X864 resolution.</p></td>
+				</tr>
+			</table>
+		</div>
+	</div>			
+<!-- footer end --> 
+<script>
+	var $affectedElements = $("*");
+
+	$affectedElements.each( function(){
+	  var $this = $(this);
+	  $this.data("orig-size", $this.css("font-size") );
+	});
+
+	$("#btn-increase").click(function(){
+	  changeFontSize(1);
+	})
+
+	$("#btn-decrease").click(function(){
+	  changeFontSize(-1);
+	})
+
+	$("#btn-orig").click(function(){
+	  $affectedElements.each( function(){
+			var $this = $(this);
+			$this.css( "font-size" , $this.data("orig-size") );
+	   });
+	})
+
+	function changeFontSize(direction){
+		$affectedElements.each( function(){
+			var $this = $(this);
+			$this.css( "font-size" , parseInt($this.css("font-size"))+direction );
+		});
+	}
+</script>
+<script>
+	// Select elements from the DOM
+		var body = document.querySelector("body");
+		var button = document.querySelector("#theme");
+		// Listen for button clicks
+		button.addEventListener("click", changeThemes);
+		button.addEventListener("click", changeButtonColors);
+		button.addEventListener("click", changeButtonText);
+		// Change theme colors
+		function changeThemes() {
+			body.classList.toggle("dark");
+		}
+		// Change button colors
+		function changeButtonColors() {
+			button.classList.toggle("light");
+		}
+		// Change button text
+		function changeButtonText() {
+		if (button.textContent === "light theme") {
+		button.textContent = "THEME";
+		} else {
+			button.textContent = "THEME";
+		}
+	}
+</script>
+</div>
+</body>
+</html>

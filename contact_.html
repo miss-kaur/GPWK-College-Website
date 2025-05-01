@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact us</title>
+<script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Home| Government Polytechnic for Women, Kandaghat</title>
+<!-- Bootstrap -->
+<script src="js/uisearch.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="fonts/fontawesome/css/fontawesome.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/social.css" rel="stylesheet">
+<link rel="stylesheet" href="news_scroll.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald|Asap">
+<link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css">
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"> </script> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+    <body target="_blank">
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="form-area">
+                            <form role="form" name="contactform" method="POST" action="email.php">
+                                <h3 class="orange">Contact us </h3>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" onKeyPress="return keyRestrict(event,'abcdefghijklmnopqrstuvwxyz ')" pattern="[a-zA-Z\s]+" required oncopy="return false" onpaste="return false">
+                                </div>
+                                <div class="form-group">
+                                    <label for="sel1">Select list:</label>
+                                    <select class="form-control" name="course" required>
+                                        <option value="">Select Diploma</option>
+                                        <option value="ece">Electronics & Comm. Engg.</option>
+                                        <option value="ce">Computer Engg. </option>
+                                        <option value="phar">Pharmacy </option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required oncopy="return false" onpaste="return false">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" onKeyPress="return keyRestrict(event,'1234567890')" maxlength="10" pattern="(.){10,10}" required oncopy="return false" onpaste="return false">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" type="textarea" id="message" name="message"  placeholder="Message" maxlength="140" rows="7" pattern="^[a-zA-Z0-9\s]*$" onkeypress="return alpha(event)" oncopy="return false" onpaste="return false"></textarea>
+                                </div>
+                                <br>
+								<input type="submit" value="Submit Form" name="submit" class="btn btn-primary pull-right">
+                            </form>
+<script language="JavaScript">
+// Code for validating the form
+var frmvalidator  = new Validator("myemailform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+</script>
+</body>
+
+</html>
